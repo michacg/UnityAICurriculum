@@ -9,10 +9,6 @@ public class CameraController : MonoBehaviour
 
     public Transform currentTarget;
 
-    private void Start()
-    {
-        
-    }
 
     private void Update()
     {
