@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - pickup
   - player
+  - enemy
+  - helper
   layers:
   - Default
   - TransparentFX
