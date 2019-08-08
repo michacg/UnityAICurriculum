@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         m_animator.SetBool("Grounded", m_isGrounded);
+        
         Move();
         m_wasGrounded = m_isGrounded;
 
