@@ -126,7 +126,13 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 788709772}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &746193017
+--- !u!4 &746193021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+    type: 3}
+  m_PrefabInstance: {fileID: 788709772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &746193023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,15 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db345bdaa0806a246a16db33fa53a688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 3
+  m_moveSpeed: 2
   m_turnSpeed: 200
   m_jumpForce: 4
---- !u!4 &746193021 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81,
-    type: 3}
-  m_PrefabInstance: {fileID: 788709772}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &788709772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -157,6 +157,10 @@ PrefabInstance:
     - target: {fileID: 1824340380413090, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824340380413090, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
+      propertyPath: m_TagString
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 4549428611729446, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
       propertyPath: m_LocalPosition.x
@@ -662,7 +666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973230732}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5000001, w: 0.49999994}
-  m_LocalPosition: {x: 15.5, y: 54.57, z: 35.1}
+  m_LocalPosition: {x: 15.5, y: 76.45, z: 35.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -677,8 +681,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973230732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbce0aaf831e39449bca54fdf41a6584, type: 3}
+  m_Script: {fileID: 11500000, guid: 25e869d676fd3734a914648de5490a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  currentTarget: {fileID: 746193021}
+  target: {fileID: 746193021}
+  offset: {x: 0.5, y: -1, z: 1}
+  pitch: 2
+  zoomSpeed: 4
+  minZoom: 5
+  maxZoom: 20
