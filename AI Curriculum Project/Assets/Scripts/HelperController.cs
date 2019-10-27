@@ -49,8 +49,6 @@ public class HelperController : MonoBehaviour
             case State.attack:
                 AttackUpdate();
                 break;
-            case NewStateUpdate();
-                break;
         }
     }
 
