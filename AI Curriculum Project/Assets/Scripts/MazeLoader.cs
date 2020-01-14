@@ -14,7 +14,7 @@ public class MazeLoader : MonoBehaviour
     	{
 		InitializeMaze();
 
-        HuntAndKillMazeAlgorithm maze = new HuntAndKillMazeAlgorithm (mazeCells);
+        	HuntAndKillMazeAlgorithm maze = new HuntAndKillMazeAlgorithm (mazeCells);
 		maze.HuntAndKill();
 	}
 	
